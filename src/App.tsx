@@ -29,12 +29,12 @@ const t = {
       { title: "Your vision\nOur technology", desc: "코스맥스의 파트너는\n코스맥스에서만 독점적으로\n업계 최고의 포뮬러 제공", image: "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=800" }
     ],
     cases: [
-      { name: "LOTTE HOTELS", subName: "Emissary.73 / Depaysmo", desc: ["국내 최대 호텔 체인 어매니티 브랜드 및 상품 개발", "글로벌 NO.1 향료사와 공동 개발한 프리미엄 퍼퓸드 어매니티"], image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&q=80&w=600" },
-      { name: "Danmir (단미르)", subName: "", desc: ["국가유산청 궁능유적본부, 국가유산진흥원과 공동 연구 개발", "한국 전통 향기를 복원하는 코스맥스 특허기술 Scenteritage® 적용"], image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&q=80&w=600" },
-      { name: "reii reii", subName: "", desc: ["글로벌 인지도를 보유한 박막례 할머니 IP 기반 브랜드 인큐베이팅", "한국적인 자연 원료와 전문 연구진의 솔루션을 담아낸 즐거움과 위트가 넘치는 스킨케어 브랜드"], image: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=600" },
-      { name: "florevida", subName: "", desc: ["삼성물산 에버랜드의 뷰티 브랜드. 에버로즈의 향기와 생명력을 담은 라이프스타일 프래그런스 브랜드"], image: "https://images.unsplash.com/photo-1615397323223-999318859739?auto=format&fit=crop&q=80&w=600" },
-      { name: "WONDERMIS", subName: "", desc: ["코스맥스 특허 Starenol™ 독점 사용프리미엄 브랜드 기획", "세계 4위 인구의 인니시장 내 파급력있는 메가 인플루언서 브랜드 런칭"], image: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&q=80&w=600" },
-      { name: "PURCELL", subName: "HIGH DOSE", desc: ["코스맥스 소재랩과 함께 마이크로바이옴 독점 원료 개발", "mL당 20억 마리 프로바이오틱스가 선사하는 장벽 초월 PIXCELL BIOM™ 원료 메인 소구"], image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=600" }
+      { name: "LOTTE HOTELS", subName: "Emissary.73 / Depaysmo", desc: ["국내 최대 호텔 체인 어매니티 브랜드 및 상품 개발", "글로벌 NO.1 향료사와 공동 개발한 프리미엄 퍼퓸드 어매니티"], image: "https://godomall-storage.cdn-nhncommerce.com/e9f3698822f4752682e9e476d8056c3d/goods/9250802/image/detail/9250802_detail_342.jpg" },
+      { name: "Danmir (단미르)", subName: "", desc: ["국가유산청 궁능유적본부, 국가유산진흥원과 공동 연구 개발", "한국 전통 향기를 복원하는 코스맥스 특허기술 Scenteritage® 적용"], image: "https://m.intelrior.com/web/product/big/202402/160227e09a5a21874f32fdf06e98419a.png" },
+      { name: "reii reii", subName: "", desc: ["글로벌 인지도를 보유한 박막례 할머니 IP 기반 브랜드 인큐베이팅", "한국적인 자연 원료와 전문 연구진의 솔루션을 담아낸 즐거움과 위트가 넘치는 스킨케어 브랜드"], image: "https://media.bunjang.co.kr/product/263843896_1_1724590464_w360.jpg" },
+      { name: "florevida", subName: "", desc: ["삼성물산 에버랜드의 뷰티 브랜드. 에버로즈의 향기와 생명력을 담은 라이프스타일 프래그런스 브랜드"], image: "https://www.cosinkorea.com/data/photos/20240937/art_17259462623283_5161e6.jpg" },
+      { name: "WONDERMIS", subName: "", desc: ["코스맥스 특허 Starenol™ 독점 사용프리미엄 브랜드 기획", "세계 4위 인구의 인니시장 내 파급력있는 메가 인플루언서 브랜드 런칭"], image: "https://id-live-01.slatic.net/p/0f1be9ecf084bb5eca01dbc1998a8d97.jpg" },
+      { name: "PURCELL", subName: "HIGH DOSE", desc: ["코스맥스 소재랩과 함께 마이크로바이옴 독점 원료 개발", "mL당 20억 마리 프로바이오틱스가 선사하는 장벽 초월 PIXCELL BIOM™ 원료 메인 소구"], image: "https://m.ceoscoredaily.com/photos/2023/12/29/2023122916012917850_l.png" }
     ]
   },
   en: {
@@ -49,12 +49,12 @@ const t = {
       { title: "Your vision. Our technology.", desc: "The R&I team, consisting of over 1,100 R&D personnel worldwide, develops formulas based on expertise in optimal ingredient combinations.", image: "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=800" }
     ],
     cases: [
-      { name: "LOTTE HOTELS", subName: "Emissary.73 / Depaysmo", desc: ["Development of amenity brands and products for Korea's largest hotel chain", "Premium perfumed amenities co-developed with the global No.1 fragrance company"], image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&q=80&w=600" },
-      { name: "Danmir", subName: "", desc: ["Joint R&D with the Royal Palaces and Tombs Center and the Korea Heritage Agency", "Applied COSMAX's patented Scenteritage® technology to restore traditional Korean scents"], image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&q=80&w=600" },
-      { name: "reii reii", subName: "", desc: ["Brand incubating based on the globally recognized Grandma Park Makrye IP", "Spreading traditional Korean beauty recipes based on digital platforms with global creator content transcending generations and borders"], image: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=600" },
-      { name: "florevida", subName: "", desc: ["Samsung C&T Everland's beauty brand", "A lifestyle fragrance brand capturing the scent and vitality of Ever Rose, launching 24 SKUs including body, hand, and hair products"], image: "https://images.unsplash.com/photo-1615397323223-999318859739?auto=format&fit=crop&q=80&w=600" },
-      { name: "WONDERMIS", subName: "", desc: ["Planning a premium brand based on COSMAX technology by launching a mega-influencer brand with massive impact in the Indonesian market, the 4th most populous country", "Nagita Slavina (Singer/Actress) - 76.1M Instagram, 26.2M YouTube, 15.3M TikTok followers"], image: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&q=80&w=600" },
-      { name: "PURCELL", subName: "", desc: ["Co-developed an exclusive microbiome ingredient with COSMAX Material Lab, featuring PIXCELL BIOM™ ingredient that delivers 2 billion probiotics per mL to transcend skin barriers"], image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=600" }
+      { name: "LOTTE HOTELS", subName: "Emissary.73 / Depaysmo", desc: ["Development of amenity brands and products for Korea's largest hotel chain", "Premium perfumed amenities co-developed with the global No.1 fragrance company"], image: "https://godomall-storage.cdn-nhncommerce.com/e9f3698822f4752682e9e476d8056c3d/goods/9250802/image/detail/9250802_detail_342.jpg" },
+      { name: "Danmir", subName: "", desc: ["Joint R&D with the Royal Palaces and Tombs Center and the Korea Heritage Agency", "Applied COSMAX's patented Scenteritage® technology to restore traditional Korean scents"], image: "https://m.intelrior.com/web/product/big/202402/160227e09a5a21874f32fdf06e98419a.png" },
+      { name: "reii reii", subName: "", desc: ["Brand incubating based on the globally recognized Grandma Park Makrye IP", "Spreading traditional Korean beauty recipes based on digital platforms with global creator content transcending generations and borders"], image: "https://media.bunjang.co.kr/product/263843896_1_1724590464_w360.jpg" },
+      { name: "florevida", subName: "", desc: ["Samsung C&T Everland's beauty brand", "A lifestyle fragrance brand capturing the scent and vitality of Ever Rose, launching 24 SKUs including body, hand, and hair products"], image: "https://www.cosinkorea.com/data/photos/20240937/art_17259462623283_5161e6.jpg" },
+      { name: "WONDERMIS", subName: "", desc: ["Planning a premium brand based on COSMAX technology by launching a mega-influencer brand with massive impact in the Indonesian market, the 4th most populous country", "Nagita Slavina (Singer/Actress) - 76.1M Instagram, 26.2M YouTube, 15.3M TikTok followers"], image: "https://id-live-01.slatic.net/p/0f1be9ecf084bb5eca01dbc1998a8d97.jpg" },
+      { name: "PURCELL", subName: "", desc: ["Co-developed an exclusive microbiome ingredient with COSMAX Material Lab, featuring PIXCELL BIOM™ ingredient that delivers 2 billion probiotics per mL to transcend skin barriers"], image: "https://m.ceoscoredaily.com/photos/2023/12/29/2023122916012917850_l.png" }
     ]
   },
   zh: {
@@ -69,12 +69,12 @@ const t = {
       { title: "Your vision. Our technology.", desc: "由全球1,100多名研发人员组成的R&I团队，基于对最佳成分组合的专业知识开发配方。", image: "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=800" }
     ],
     cases: [
-      { name: "LOTTE HOTELS", subName: "Emissary.73 / Depaysmo", desc: ["韩国最大连锁酒店的洗浴用品品牌及产品开发", "与全球第一香精公司共同开发的高级香水洗浴用品"], image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&q=80&w=600" },
-      { name: "Danmir", subName: "", desc: ["与国家遗产厅宫能遗迹本部、国家遗产振兴院共同研发", "应用COSMAX恢复韩国传统香气的专利技术Scenteritage®"], image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&q=80&w=600" },
-      { name: "reii reii", subName: "", desc: ["基于具有全球知名度的朴末礼奶奶IP的品牌孵化", "通过超越世代和国界的全球创作者内容，在数字平台上推广韩国传统美容配方"], image: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=600" },
-      { name: "florevida", subName: "", desc: ["三星物产爱宝乐园的美容品牌", "蕴含Ever Rose香气和生命力的生活方式香氛品牌，推出身体、手部、头发等24个SKU"], image: "https://images.unsplash.com/photo-1615397323223-999318859739?auto=format&fit=crop&q=80&w=600" },
-      { name: "WONDERMIS", subName: "", desc: ["通过在世界人口第四大国印尼市场推出具有影响力的超级网红品牌，策划基于COSMAX技术的高端品牌", "Nagita Slavina (歌手/演员) - Instagram 7610万，YouTube 2620万，TikTok 1530万粉丝"], image: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&q=80&w=600" },
-      { name: "PURCELL", subName: "", desc: ["与COSMAX材料实验室共同开发独家微生物组原料，主打每毫升含20亿益生菌、超越屏障的PIXCELL BIOM™原料"], image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=600" }
+      { name: "LOTTE HOTELS", subName: "Emissary.73 / Depaysmo", desc: ["韩国最大连锁酒店的洗浴用品品牌及产品开发", "与全球第一香精公司共同开发的高级香水洗浴用品"], image: "https://godomall-storage.cdn-nhncommerce.com/e9f3698822f4752682e9e476d8056c3d/goods/9250802/image/detail/9250802_detail_342.jpg" },
+      { name: "Danmir", subName: "", desc: ["与国家遗产厅宫能遗迹本部、国家遗产振兴院共同研发", "应用COSMAX恢复韩国传统香气的专利技术Scenteritage®"], image: "https://m.intelrior.com/web/product/big/202402/160227e09a5a21874f32fdf06e98419a.png" },
+      { name: "reii reii", subName: "", desc: ["基于具有全球知名度的朴末礼奶奶IP的品牌孵化", "通过超越世代和国界的全球创作者内容，在数字平台上推广韩国传统美容配方"], image: "https://media.bunjang.co.kr/product/263843896_1_1724590464_w360.jpg" },
+      { name: "florevida", subName: "", desc: ["三星物产爱宝乐园的美容品牌", "蕴含Ever Rose香气和生命力的生活方式香氛品牌，推出身体、手部、头发等24个SKU"], image: "https://www.cosinkorea.com/data/photos/20240937/art_17259462623283_5161e6.jpg" },
+      { name: "WONDERMIS", subName: "", desc: ["通过在世界人口第四大国印尼市场推出具有影响力的超级网红品牌，策划基于COSMAX技术的高端品牌", "Nagita Slavina (歌手/演员) - Instagram 7610万，YouTube 2620万，TikTok 1530万粉丝"], image: "https://id-live-01.slatic.net/p/0f1be9ecf084bb5eca01dbc1998a8d97.jpg" },
+      { name: "PURCELL", subName: "", desc: ["与COSMAX材料实验室共同开发独家微生物组原料，主打每毫升含20亿益生菌、超越屏障的PIXCELL BIOM™原料"], image: "https://m.ceoscoredaily.com/photos/2023/12/29/2023122916012917850_l.png" }
     ]
   },
   ja: {
@@ -89,12 +89,12 @@ const t = {
       { title: "Your vision. Our technology.", desc: "全世界1,100人以上の研究開発陣で構成されたR&Iチームが、最適な成分の組み合わせに関する専門知識を基にフォーミュラを開発。", image: "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=800" }
     ],
     cases: [
-      { name: "LOTTE HOTELS", subName: "Emissary.73 / Depaysmo", desc: ["国内最大のホテルチェーンのアメニティブランドおよび商品開発", "グローバルNO.1の香料会社と共同開発したプレミアムパフュームアメニティ"], image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&q=80&w=600" },
-      { name: "Danmir", subName: "", desc: ["国家遺産庁宮陵遺跡本部、国家遺産振興院との共同研究開発", "韓国の伝統的な香りを復元するコスマックスの特許技術Scenteritage®を適用"], image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&q=80&w=600" },
-      { name: "reii reii", subName: "", desc: ["グローバルな認知度を持つパク・マンレおばあちゃんのIPベースのブランドインキュベーティング", "世代・国境を越えたグローバルクリエイターコンテンツにより、デジタルプラットフォームベースで韓国の伝統的なビューティーレシピを拡散"], image: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=600" },
-      { name: "florevida", subName: "", desc: ["サムスン物産エバーランドのビューティーブランド", "エバーローズの香りと生命力を込めたライフスタイルフレグランスブランドとして、ボディ＆ハンド＆ヘアなど24SKUを発売"], image: "https://images.unsplash.com/photo-1615397323223-999318859739?auto=format&fit=crop&q=80&w=600" },
-      { name: "WONDERMIS", subName: "", desc: ["世界第4位の人口を抱えるインドネシア市場で影響力のあるメガインフルエンサーブランドの立ち上げにより、コスマックスの技術に基づくプレミアムブランドを企画", "Nagita Slavina (歌手/俳優) - Instagram 7610万、YouTube 2620万、TikTok 1530万フォロワー"], image: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&q=80&w=600" },
-      { name: "PURCELL", subName: "", desc: ["コスマックス素材ラボと共にマイクロバイオーム独占原料を開発し、1mLあたり20億個のプロバイオティクスがもたらす障壁超越PIXCELL BIOM™原料をメインに訴求"], image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=600" }
+      { name: "LOTTE HOTELS", subName: "Emissary.73 / Depaysmo", desc: ["国内最大のホテルチェーンのアメニティブランドおよび商品開発", "グローバルNO.1の香料会社と共同開発したプレミアムパフュームアメニティ"], image: "https://godomall-storage.cdn-nhncommerce.com/e9f3698822f4752682e9e476d8056c3d/goods/9250802/image/detail/9250802_detail_342.jpg" },
+      { name: "Danmir", subName: "", desc: ["国家遺産庁宮陵遺跡本部、国家遺産振興院との共同研究開発", "韓国の伝統的な香りを復元するコスマックスの特許技術Scenteritage®を適用"], image: "https://m.intelrior.com/web/product/big/202402/160227e09a5a21874f32fdf06e98419a.png" },
+      { name: "reii reii", subName: "", desc: ["グローバルな認知度を持つパク・マンレおばあちゃんのIPベースのブランドインキュベーティング", "世代・国境を越えたグローバルクリエイターコンテンツにより、デジタルプラットフォームベースで韓国の伝統的なビューティーレシピを拡散"], image: "https://media.bunjang.co.kr/product/263843896_1_1724590464_w360.jpg" },
+      { name: "florevida", subName: "", desc: ["サムスン物産エバーランドのビューティーブランド", "エバーローズの香りと生命力を込めたライフスタイルフレグランスブランドとして、ボディ＆ハンド＆ヘアなど24SKUを発売"], image: "https://www.cosinkorea.com/data/photos/20240937/art_17259462623283_5161e6.jpg" },
+      { name: "WONDERMIS", subName: "", desc: ["世界第4位の人口を抱えるインドネシア市場で影響力のあるメガインフルエンサーブランドの立ち上げにより、コスマックスの技術に基づくプレミアムブランドを企画", "Nagita Slavina (歌手/俳優) - Instagram 7610万、YouTube 2620万、TikTok 1530万フォロワー"], image: "https://id-live-01.slatic.net/p/0f1be9ecf084bb5eca01dbc1998a8d97.jpg" },
+      { name: "PURCELL", subName: "", desc: ["コスマックス素材ラボと共にマイクロバイオーム独占原料を開発し、1mLあたり20億個のプロバイオティクスがもたらす障壁超越PIXCELL BIOM™原料をメインに訴求"], image: "https://m.ceoscoredaily.com/photos/2023/12/29/2023122916012917850_l.png" }
     ]
   }
 };
@@ -211,15 +211,6 @@ function Hero() {
         style={{ y, opacity }}
         className="relative z-10 flex flex-col items-center gap-6"
       >
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2, duration: 0.8, type: "spring" }}
-          whileHover={{ scale: 1.05, filter: "drop-shadow(0px 0px 10px rgba(255,255,255,0.5))" }}
-          className="cursor-pointer drop-shadow-lg transition-all duration-300 w-full max-w-xs md:max-w-md px-4"
-        >
-          <CosmaxLogo className="w-full h-auto" textColor="#FFFFFF" />
-        </motion.div>
       </motion.div>
       
       <motion.div 
