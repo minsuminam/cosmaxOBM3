@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const apiKey = process.env.GEMINI_API_KEY || '';
+const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
 
 export function GeneratedImage({ prompt, alt, className }: { prompt: string, alt: string, className?: string }) {
   const [imageUrl, setImageUrl] = useState<string | null>(null);
@@ -9,6 +10,12 @@ export function GeneratedImage({ prompt, alt, className }: { prompt: string, alt
 
   useEffect(() => {
     const generate = async () => {
+      if (!ai) {
+        console.error("Gemini API key is missing. Please set GEMINI_API_KEY in your environment variables.");
+        setLoading(false);
+        return;
+      }
+
       // Hash the prompt or just use it as key if it's not too long
       const cacheKey = `gen_img_${btoa(encodeURIComponent(prompt)).substring(0, 50)}`;
       const cached = localStorage.getItem(cacheKey);
