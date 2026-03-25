@@ -670,76 +670,120 @@ function Footer() {
 }
 
 function OurSolutions() {
+  const [hoveredCol, setHoveredCol] = useState<'build' | 'select' | null>(null);
+
+  const solutionsData = [
+    {
+      label: "의미",
+      build: "코스맥스 OBM과 처음부터 설계하는 방식",
+      select: "이미 축적된 자산을 활용해 빠르게 전개하는 방식"
+    },
+    {
+      label: "진행\n과정",
+      build: "시장분석 → 브랜드 전략 → 네이밍 → 제형 개발 →\n디자인 개발 → 생산",
+      select: "인벤토리 선택 → 브랜드 구체화 → 제형 적용 →\n디자인 보완 → 생산"
+    },
+    {
+      label: "개발\n기간",
+      build: "국내 진행 기준, 최소 10개월\n신규브랜드로 해외 등록까지 진행 시, 약 2년 소요",
+      select: "국내 진행 기준, 약 5개월"
+    },
+    {
+      label: "추천\n대상",
+      build: "브랜드의 독창성이 중요한 고객사\n처음부터 전략적으로 선택하고 싶은 고객사",
+      select: "시장 출시 속도가 중요한 고객사\n예산 효율성이 중요한 고객사"
+    }
+  ];
+
   return (
     <section className="py-32 px-6 md:px-12 max-w-7xl mx-auto">
       <FadeIn>
-        <h2 className="text-5xl md:text-7xl font-bold text-[#0A2540] mb-8">Our Solutions</h2>
-        <ul className="space-y-2 text-xl text-gray-700 mb-16">
-          <li className="flex items-start">
-            <span className="mr-2 mt-2 w-1.5 h-1.5 bg-[#0A2540] rounded-full flex-shrink-0"></span>
+        <div className="border-b border-red-600 pb-4 mb-8">
+          <h2 className="text-4xl md:text-5xl font-medium text-black">Our Solutions</h2>
+        </div>
+        <ul className="space-y-2 text-lg text-black mb-16 font-medium">
+          <li className="flex items-center">
+            <span className="mr-2 w-1 h-1 bg-black rounded-full flex-shrink-0"></span>
             <span>서비스를 '처음부터 함께 만드는 방식'과 '준비된 자산을 활용하는 방식' 중 선택</span>
           </li>
-          <li className="flex items-start">
-            <span className="mr-2 mt-2 w-1.5 h-1.5 bg-[#0A2540] rounded-full flex-shrink-0"></span>
+          <li className="flex items-center">
+            <span className="mr-2 w-1 h-1 bg-black rounded-full flex-shrink-0"></span>
             <span>고객사의 특성과 상황에 맞춘 선택으로 효율적 운영 가능</span>
           </li>
         </ul>
       </FadeIn>
 
-      <div className="grid md:grid-cols-2 gap-8">
-        {/* Build Service */}
-        <FadeIn delay={0.2}>
-          <div className="bg-gray-100 rounded-xl overflow-hidden h-full flex flex-col">
-            <div className="bg-gray-500 text-white text-center py-4 text-2xl font-bold">
-              Build(Full) Service
+      <div className="w-full overflow-x-auto pb-12 pt-4">
+        <div className="min-w-[800px] flex flex-col gap-4 relative" onMouseLeave={() => setHoveredCol(null)}>
+          {/* Header Row */}
+          <div className="flex gap-4">
+            <div className="w-24 flex-shrink-0"></div>
+            <div
+              className={`flex-1 text-center py-4 text-xl font-bold rounded-xl transition-all duration-500 cursor-pointer ${
+                hoveredCol === 'build'
+                  ? 'bg-[#0A2540] text-white shadow-xl scale-[1.02] z-10'
+                  : hoveredCol === 'select'
+                  ? 'bg-[#808080] text-white/70 opacity-60'
+                  : 'bg-[#808080] text-white hover:bg-[#666666]'
+              }`}
+              onMouseEnter={() => setHoveredCol('build')}
+            >
+              Build your brand
             </div>
-            <div className="p-8 flex-grow flex flex-col gap-6">
-              <div className="flex items-center gap-4">
-                <div className="w-20 font-bold text-gray-600 text-center bg-gray-200 py-2 rounded-lg">의미</div>
-                <div className="flex-1 text-center bg-white py-2 rounded-lg shadow-sm">코스맥스 OBM과 처음부터 설계하는 방식</div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-20 font-bold text-gray-600 text-center bg-gray-200 py-6 rounded-lg">진행<br/>과정</div>
-                <div className="flex-1 text-center bg-white py-4 rounded-lg shadow-sm leading-loose">
-                  시장분석 → 브랜드 전략 → 네이밍 → 제형 개발 → 디자인<br/>개발 → 생산
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-20 font-bold text-gray-600 text-center bg-gray-200 py-6 rounded-lg">추천<br/>대상</div>
-                <div className="flex-1 text-center bg-white py-4 rounded-lg shadow-sm leading-loose">
-                  브랜드의 독창성이 중요한 고객사<br/>처음부터 전략적으로 선택하고 싶은 고객사
-                </div>
-              </div>
+            <div
+              className={`flex-1 text-center py-4 text-xl font-bold rounded-xl transition-all duration-500 cursor-pointer ${
+                hoveredCol === 'select'
+                  ? 'bg-[#0A2540] text-white shadow-xl scale-[1.02] z-10'
+                  : hoveredCol === 'build'
+                  ? 'bg-[#808080] text-white/70 opacity-60'
+                  : 'bg-[#808080] text-white hover:bg-[#666666]'
+              }`}
+              onMouseEnter={() => setHoveredCol('select')}
+            >
+              Select your service
             </div>
           </div>
-        </FadeIn>
 
-        {/* Select Service */}
-        <FadeIn delay={0.4}>
-          <div className="bg-gray-100 rounded-xl overflow-hidden h-full flex flex-col">
-            <div className="bg-gray-500 text-white text-center py-4 text-2xl font-bold">
-              Select Service
-            </div>
-            <div className="p-8 flex-grow flex flex-col gap-6">
-              <div className="flex items-center gap-4">
-                <div className="w-20 font-bold text-gray-600 text-center bg-gray-200 py-2 rounded-lg md:opacity-0">의미</div>
-                <div className="flex-1 text-center bg-white py-2 rounded-lg shadow-sm">이미 축적된 자산을 활용해 빠르게 전개하는 방식</div>
+          {/* Rows */}
+          {solutionsData.map((row, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 * idx, duration: 0.5 }}
+              className="flex gap-4"
+            >
+              <div className="w-24 flex-shrink-0 bg-[#F8F9FA] border border-gray-200 flex items-center justify-center font-bold text-[#0A2540] rounded-xl shadow-sm py-6 text-center whitespace-pre-line">
+                {row.label}
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-20 font-bold text-gray-600 text-center bg-gray-200 py-6 rounded-lg md:opacity-0">진행<br/>과정</div>
-                <div className="flex-1 text-center bg-white py-4 rounded-lg shadow-sm leading-loose">
-                  인벤토리 선택 → 브랜드 구체화 → 제형 적용<br/>→ 디자인 보완 → 생산
-                </div>
+              <div
+                className={`flex-1 flex items-center justify-center text-center rounded-xl py-6 px-6 leading-relaxed whitespace-pre-line transition-all duration-500 cursor-pointer ${
+                  hoveredCol === 'build'
+                    ? 'bg-white text-[#0A2540] shadow-xl scale-[1.02] z-10 border-2 border-[#0A2540]/10 font-medium'
+                    : hoveredCol === 'select'
+                    ? 'bg-[#F2F2F2] text-gray-400 opacity-60'
+                    : 'bg-[#F2F2F2] text-black hover:bg-[#E8E8E8]'
+                }`}
+                onMouseEnter={() => setHoveredCol('build')}
+              >
+                {row.build}
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-20 font-bold text-gray-600 text-center bg-gray-200 py-6 rounded-lg md:opacity-0">추천<br/>대상</div>
-                <div className="flex-1 text-center bg-white py-4 rounded-lg shadow-sm leading-loose">
-                  시장 출시 속도가 중요한 고객사<br/>예산 효율성이 중요한 고객사
-                </div>
+              <div
+                className={`flex-1 flex items-center justify-center text-center rounded-xl py-6 px-6 leading-relaxed whitespace-pre-line transition-all duration-500 cursor-pointer ${
+                  hoveredCol === 'select'
+                    ? 'bg-white text-[#0A2540] shadow-xl scale-[1.02] z-10 border-2 border-[#0A2540]/10 font-medium'
+                    : hoveredCol === 'build'
+                    ? 'bg-[#F2F2F2] text-gray-400 opacity-60'
+                    : 'bg-[#F2F2F2] text-black hover:bg-[#E8E8E8]'
+                }`}
+                onMouseEnter={() => setHoveredCol('select')}
+              >
+                {row.select}
               </div>
-            </div>
-          </div>
-        </FadeIn>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
