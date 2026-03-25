@@ -7,16 +7,16 @@ const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
 export function GeneratedImage({ prompt, alt, className }: { prompt: string, alt: string, className?: string }) {
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   useEffect(() => {
     const generate = async () => {
       if (!ai) {
-        console.error("Gemini API key is missing. Please set GEMINI_API_KEY in your environment variables.");
+        setErrorMsg("Gemini API key is missing.");
         setLoading(false);
         return;
       }
 
-      // Hash the prompt or just use it as key if it's not too long
       const cacheKey = `gen_img_${btoa(encodeURIComponent(prompt)).substring(0, 50)}`;
       const cached = localStorage.getItem(cacheKey);
       if (cached) {
@@ -28,34 +28,42 @@ export function GeneratedImage({ prompt, alt, className }: { prompt: string, alt
       try {
         const response = await ai.models.generateContent({
           model: 'gemini-2.5-flash-image',
-          contents: prompt,
+          contents: {
+            parts: [
+              { text: prompt }
+            ]
+          },
           config: {
             imageConfig: {
-              aspectRatio: "4:3",
-              imageSize: "1K"
+              aspectRatio: "4:3"
             }
           }
         });
 
+        let foundImage = false;
         for (const part of response.candidates?.[0]?.content?.parts || []) {
           if (part.inlineData) {
             const base64EncodeString = part.inlineData.data;
-            const url = `data:image/jpeg;base64,${base64EncodeString}`;
+            const url = `data:image/png;base64,${base64EncodeString}`;
             setImageUrl(url);
             
-            // Try to cache it, might fail if base64 is too large for localStorage
             try {
               localStorage.setItem(cacheKey, url);
             } catch (e) {
               console.warn("Could not cache image to localStorage", e);
             }
             
-            setLoading(false);
-            return;
+            foundImage = true;
+            break;
           }
         }
-      } catch (e) {
+        
+        if (!foundImage) {
+          setErrorMsg("No image data found in response.");
+        }
+      } catch (e: any) {
         console.error("Failed to generate image", e);
+        setErrorMsg(e.message || "Unknown error occurred");
       }
       setLoading(false);
     };
@@ -72,10 +80,11 @@ export function GeneratedImage({ prompt, alt, className }: { prompt: string, alt
     );
   }
 
-  if (!imageUrl) {
+  if (errorMsg || !imageUrl) {
     return (
-      <div className={`bg-gray-100 flex items-center justify-center ${className}`}>
-        <span className="text-gray-400 text-sm">Failed to load image</span>
+      <div className={`bg-gray-100 flex flex-col items-center justify-center p-4 text-center ${className}`}>
+        <span className="text-red-500 text-sm font-bold mb-1">Failed to load image</span>
+        <span className="text-gray-500 text-xs">{errorMsg}</span>
       </div>
     );
   }
