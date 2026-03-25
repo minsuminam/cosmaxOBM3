@@ -9,11 +9,11 @@ export type Lang = 'ko' | 'en' | 'zh' | 'ja';
 
 const processSteps = [
   { id: '01', name: 'Strategy', icon: Lightbulb, desc: "코스맥스는 브랜드와 제품을 위한 명확한 비전을 세우고, 소비자를 정의하며, 목표를 심층적으로 이해한 뒤, 강점을 극대화할 수 있는 브랜드 전략을 제안합니다.\n현재 주목해야 할 트렌드는 물론 고객의 강점을 살린 제품을 만들기 위해 필요한 각 단계별 절차를 안내하고, 각 고객의 특성에 맞춘 성공 경로를 설계합니다." },
-  { id: '02', name: 'Brand concept', icon: Brain, desc: "코스맥스는 전략적 사고를 통해 브랜드의 성격과 이름, 미적 요소와 서사를 포함한 브랜드만의 독창적인 콘셉트를 기획합니다.\n미래지향적이거나 레트로 하거나, 대담하거나, 실용적이거나, 어떤 콘셉트이든 브랜드가 구축될 토대를 마련하고 핵심적인 아이디어를 함께 구체화해 나갑니다." },
+  { id: '02', name: 'Brand Concept', icon: Brain, desc: "코스맥스는 전략적 사고를 통해 브랜드의 성격과 이름, 미적 요소와 서사를 포함한 브랜드만의 독창적인 콘셉트를 기획합니다.\n미래지향적이거나 레트로 하거나, 대담하거나, 실용적이거나, 어떤 콘셉트이든 브랜드가 구축될 토대를 마련하고 핵심적인 아이디어를 함께 구체화해 나갑니다." },
   { id: '03', name: 'Design', icon: PenTool, desc: "코스맥스의 디자인팀은 아이디어를 현실로 만들어냅니다. 로고와 아이콘, 색상과 메시지의 톤&매너에 이르기까지 브랜드의 시각적·언어적 정체성을 설계하고 시장에서 돋보이도록 브랜드를 디자인합니다.\n디자인이 완료되면 이를 제품에 적용하고 출시할 수 있도록 지원합니다." },
   { id: '04', name: 'Formulation', icon: FlaskConical, desc: "코스맥스는 업계 최고의 기술, 성분, 피부 전달체 등을 활용해 고객이 원하는 제품, 브랜드 및 사용자에게 적합한 제형을 개발합니다.\n전 세계 1,100여 명의 연구 개발 인력으로 구성된 R&I 팀이 최적의 성분 조합에 대한 전문 지식을 바탕으로 개발한 제형은 뛰어난 품질과 효과를 보장합니다." },
-  { id: '05', name: 'Packaging', icon: Package, desc: "코스맥스는 새로운 브랜드의 가치를 극대화하는 아름다운 패키지를 디자인하고 개발해 우수한 제품을 출시할 수 있도록 지원합니다.\n지속 가능한 소재부터 용기의 모양, 제품 라벨과 전달 방식에 이르기까지 모든 요소를 신중하게 고려합니다." },
-  { id: '06', name: 'Manufacturing', icon: Factory, desc: "글로벌 인프라와 효율적인 프로세스를 토대로 고객의 제품을 신속하게 대량생산합니다. 이는 제품 카테고리별로 특화되고 과학적으로 강화된 시설을 갖추고 있기 때문에 가능한 일입니다.\n코스맥스는 원료 공급업체의 방대한 네트워크, 특허받은 생산 기술, 업계 기준을 뛰어넘는 수많은 인증을 통해 모든 제품군에서 뛰어난 품질을 보장합니다." }
+  { id: '05', name: 'Manufacturing', icon: Factory, desc: "글로벌 인프라와 효율적인 프로세스를 토대로 고객의 제품을 신속하게 대량생산합니다. 이는 제품 카테고리별로 특화되고 과학적으로 강화된 시설을 갖추고 있기 때문에 가능한 일입니다.\n코스맥스는 원료 공급업체의 방대한 네트워크, 특허받은 생산 기술, 업계 기준을 뛰어넘는 수많은 인증을 통해 모든 제품군에서 뛰어난 품질을 보장합니다." },
+  { id: '06', name: 'Packaging', icon: Package, desc: "코스맥스는 새로운 브랜드의 가치를 극대화하는 아름다운 패키지를 디자인하고 개발해 우수한 제품을 출시할 수 있도록 지원합니다.\n지속 가능한 소재부터 용기의 모양, 제품 라벨과 전달 방식에 이르기까지 모든 요소를 신중하게 고려합니다." }
 ];
 
 const t = {
@@ -29,7 +29,12 @@ const t = {
       { title: "Your vision\nOur technology", desc: "코스맥스의 파트너는\n코스맥스에서만 독점적으로\n업계 최고의 포뮬러 제공", image: "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=800" }
     ],
     cases: [
-      { name: "LOTTE HOTELS", subName: "Emissary.73 / Depaysmo", desc: ["국내 최대 호텔 체인 어매니티 브랜드 및 상품 개발", "글로벌 NO.1 향료사와 공동 개발한 프리미엄 퍼퓸드 어매니티"], image: "https://godomall-storage.cdn-nhncommerce.com/e9f3698822f4752682e9e476d8056c3d/goods/9250802/image/detail/9250802_detail_342.jpg" },
+      { 
+        name: "LOTTE HOTELS", 
+        subName: "Emissary.73 / Depaysmo", 
+        desc: ["국내 최대 호텔 체인 어매니티 브랜드 및 상품 개발", "글로벌 NO.1 향료사와 공동 개발한 프리미엄 퍼퓸드 어매니티"], 
+        prompt: "A product photography of two white pump bottles with gold text 'EMISSARY.73', one standing on a dark grey box, the other standing next to it. The bottles are labeled 'ENRICHING CREAM SHAMPOO' and 'ENRICHING CREAM TREATMENT'. Dark background, studio lighting."
+      },
       { name: "Danmir (단미르)", subName: "", desc: ["국가유산청 궁능유적본부, 국가유산진흥원과 공동 연구 개발", "한국 전통 향기를 복원하는 코스맥스 특허기술 Scenteritage® 적용"], image: "https://m.intelrior.com/web/product/big/202402/160227e09a5a21874f32fdf06e98419a.png" },
       { name: "reii reii", subName: "", desc: ["글로벌 인지도를 보유한 박막례 할머니 IP 기반 브랜드 인큐베이팅", "한국적인 자연 원료와 전문 연구진의 솔루션을 담아낸 즐거움과 위트가 넘치는 스킨케어 브랜드"], image: "https://media.bunjang.co.kr/product/263843896_1_1724590464_w360.jpg" },
       { name: "florevida", subName: "", desc: ["삼성물산 에버랜드의 뷰티 브랜드. 에버로즈의 향기와 생명력을 담은 라이프스타일 프래그런스 브랜드"], image: "https://www.cosinkorea.com/data/photos/20240937/art_17259462623283_5161e6.jpg" },
@@ -49,7 +54,12 @@ const t = {
       { title: "Your vision. Our technology.", desc: "The R&I team, consisting of over 1,100 R&D personnel worldwide, develops formulas based on expertise in optimal ingredient combinations.", image: "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=800" }
     ],
     cases: [
-      { name: "LOTTE HOTELS", subName: "Emissary.73 / Depaysmo", desc: ["Development of amenity brands and products for Korea's largest hotel chain", "Premium perfumed amenities co-developed with the global No.1 fragrance company"], image: "https://godomall-storage.cdn-nhncommerce.com/e9f3698822f4752682e9e476d8056c3d/goods/9250802/image/detail/9250802_detail_342.jpg" },
+      { 
+        name: "LOTTE HOTELS", 
+        subName: "Emissary.73 / Depaysmo", 
+        desc: ["Development of amenity brands and products for Korea's largest hotel chain", "Premium perfumed amenities co-developed with the global No.1 fragrance company"], 
+        prompt: "A product photography of two white pump bottles with gold text 'EMISSARY.73', one standing on a dark grey box, the other standing next to it. The bottles are labeled 'ENRICHING CREAM SHAMPOO' and 'ENRICHING CREAM TREATMENT'. Dark background, studio lighting."
+      },
       { name: "Danmir", subName: "", desc: ["Joint R&D with the Royal Palaces and Tombs Center and the Korea Heritage Agency", "Applied COSMAX's patented Scenteritage® technology to restore traditional Korean scents"], image: "https://m.intelrior.com/web/product/big/202402/160227e09a5a21874f32fdf06e98419a.png" },
       { name: "reii reii", subName: "", desc: ["Brand incubating based on the globally recognized Grandma Park Makrye IP", "Spreading traditional Korean beauty recipes based on digital platforms with global creator content transcending generations and borders"], image: "https://media.bunjang.co.kr/product/263843896_1_1724590464_w360.jpg" },
       { name: "florevida", subName: "", desc: ["Samsung C&T Everland's beauty brand", "A lifestyle fragrance brand capturing the scent and vitality of Ever Rose, launching 24 SKUs including body, hand, and hair products"], image: "https://www.cosinkorea.com/data/photos/20240937/art_17259462623283_5161e6.jpg" },
@@ -69,7 +79,12 @@ const t = {
       { title: "Your vision. Our technology.", desc: "由全球1,100多名研发人员组成的R&I团队，基于对最佳成分组合的专业知识开发配方。", image: "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=800" }
     ],
     cases: [
-      { name: "LOTTE HOTELS", subName: "Emissary.73 / Depaysmo", desc: ["韩国最大连锁酒店的洗浴用品品牌及产品开发", "与全球第一香精公司共同开发的高级香水洗浴用品"], image: "https://godomall-storage.cdn-nhncommerce.com/e9f3698822f4752682e9e476d8056c3d/goods/9250802/image/detail/9250802_detail_342.jpg" },
+      { 
+        name: "LOTTE HOTELS", 
+        subName: "Emissary.73 / Depaysmo", 
+        desc: ["韩国最大连锁酒店的洗浴用品品牌及产品开发", "与全球第一香精公司共同开发的高级香水洗浴用品"], 
+        prompt: "A product photography of two white pump bottles with gold text 'EMISSARY.73', one standing on a dark grey box, the other standing next to it. The bottles are labeled 'ENRICHING CREAM SHAMPOO' and 'ENRICHING CREAM TREATMENT'. Dark background, studio lighting."
+      },
       { name: "Danmir", subName: "", desc: ["与国家遗产厅宫能遗迹本部、国家遗产振兴院共同研发", "应用COSMAX恢复韩国传统香气的专利技术Scenteritage®"], image: "https://m.intelrior.com/web/product/big/202402/160227e09a5a21874f32fdf06e98419a.png" },
       { name: "reii reii", subName: "", desc: ["基于具有全球知名度的朴末礼奶奶IP的品牌孵化", "通过超越世代和国界的全球创作者内容，在数字平台上推广韩国传统美容配方"], image: "https://media.bunjang.co.kr/product/263843896_1_1724590464_w360.jpg" },
       { name: "florevida", subName: "", desc: ["三星物产爱宝乐园的美容品牌", "蕴含Ever Rose香气和生命力的生活方式香氛品牌，推出身体、手部、头发等24个SKU"], image: "https://www.cosinkorea.com/data/photos/20240937/art_17259462623283_5161e6.jpg" },
@@ -89,7 +104,12 @@ const t = {
       { title: "Your vision. Our technology.", desc: "全世界1,100人以上の研究開発陣で構成されたR&Iチームが、最適な成分の組み合わせに関する専門知識を基にフォーミュラを開発。", image: "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=800" }
     ],
     cases: [
-      { name: "LOTTE HOTELS", subName: "Emissary.73 / Depaysmo", desc: ["国内最大のホテルチェーンのアメニティブランドおよび商品開発", "グローバルNO.1の香料会社と共同開発したプレミアムパフュームアメニティ"], image: "https://godomall-storage.cdn-nhncommerce.com/e9f3698822f4752682e9e476d8056c3d/goods/9250802/image/detail/9250802_detail_342.jpg" },
+      { 
+        name: "LOTTE HOTELS", 
+        subName: "Emissary.73 / Depaysmo", 
+        desc: ["国内最大のホテルチェーンのアメニティブランドおよび商品開発", "グローバルNO.1の香料会社と共同開発したプレミアムパフュームアメニティ"], 
+        prompt: "A product photography of two white pump bottles with gold text 'EMISSARY.73', one standing on a dark grey box, the other standing next to it. The bottles are labeled 'ENRICHING CREAM SHAMPOO' and 'ENRICHING CREAM TREATMENT'. Dark background, studio lighting."
+      },
       { name: "Danmir", subName: "", desc: ["国家遺産庁宮陵遺跡本部、国家遺産振興院との共同研究開発", "韓国の伝統的な香りを復元するコスマックスの特許技術Scenteritage®を適用"], image: "https://m.intelrior.com/web/product/big/202402/160227e09a5a21874f32fdf06e98419a.png" },
       { name: "reii reii", subName: "", desc: ["グローバルな認知度を持つパク・マンレおばあちゃんのIPベースのブランドインキュベーティング", "世代・国境を越えたグローバルクリエイターコンテンツにより、デジタルプラットフォームベースで韓国の伝統的なビューティーレシピを拡散"], image: "https://media.bunjang.co.kr/product/263843896_1_1724590464_w360.jpg" },
       { name: "florevida", subName: "", desc: ["サムスン物産エバーランドのビューティーブランド", "エバーローズの香りと生命力を込めたライフスタイルフレグランスブランドとして、ボディ＆ハンド＆ヘアなど24SKUを発売"], image: "https://www.cosinkorea.com/data/photos/20240937/art_17259462623283_5161e6.jpg" },
@@ -245,7 +265,7 @@ function WhatIsOBM({ currentT }: { currentT: any }) {
           <FadeIn delay={0.2} className="absolute top-0 right-0 w-4/5 h-2/3 z-10">
             <div className="w-full h-full border-8 border-[#F8F9FA] shadow-2xl overflow-hidden bg-white p-2">
               <GeneratedImage 
-                prompt="A high-quality, professional corporate photograph of a diverse team of experts and a client collaborating closely in a modern office. They are discussing brand planning and packaging design for a new cosmetic product. Warm lighting, photorealistic, highly detailed, symbolizing partnership and fast market entry."
+                prompt="A person from behind, wearing a white shirt, sketching cosmetic compact designs (powder cases) on a large sheet of paper with a black pen. The desk is covered with sketches of cosmetic packaging. Bright, professional photography, shallow depth of field."
                 alt="Brand Planning and Collaboration"
                 className="w-full h-full object-cover"
               />
@@ -254,7 +274,7 @@ function WhatIsOBM({ currentT }: { currentT: any }) {
           <FadeIn delay={0.4} className="absolute bottom-0 left-0 w-4/5 h-2/3 z-20">
             <div className="w-full h-full border-8 border-[#C1A68D] shadow-2xl overflow-hidden bg-white p-2">
               <GeneratedImage 
-                prompt="A high-quality, professional photograph of a modern cosmetic laboratory and production facility. Scientists and engineers working together on research, development, and manufacturing. Clean, bright, photorealistic, highly detailed, symbolizing end-to-end production and quality control."
+                prompt="A person in a white lab coat looking through a professional Olympus microscope in a laboratory setting. The person's hands in white gloves are adjusting the microscope stage. Clean, bright, professional laboratory photography, shallow depth of field."
                 alt="R&D and Manufacturing"
                 className="w-full h-full object-cover"
               />
@@ -413,29 +433,60 @@ function Process({ currentT }: { currentT: any }) {
         </FadeIn>
       </div>
       
-      <div className="relative py-12">
-        {/* Connecting Line */}
-        <div className="absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#C1A68D] to-transparent -translate-y-1/2 opacity-50"></div>
-        
+      <div className="relative py-24 overflow-hidden">
         <motion.div 
           style={{ x }}
-          className="flex justify-center gap-4 md:gap-8 px-6 min-w-max"
+          className="flex justify-center items-center min-w-max px-12 md:px-24"
         >
           {processSteps.map((step, idx) => (
             <div 
               key={idx} 
-              className="relative flex flex-col items-center group cursor-pointer"
+              className={`relative flex flex-col items-center group cursor-pointer ${idx !== 0 ? '-ml-12 md:-ml-16' : ''}`}
               onMouseEnter={() => setHoveredStep(idx)}
               onMouseLeave={() => setHoveredStep(null)}
             >
-              <div className={`w-32 h-32 md:w-48 md:h-48 rounded-full border-4 flex flex-col items-center justify-center z-10 transition-all duration-300 ${hoveredStep === idx ? 'border-[#0A2540] bg-[#0A2540] scale-110 shadow-xl' : 'border-[#C1A68D]/40 bg-[#FFFDF9] group-hover:border-[#0A2540] group-hover:scale-105'}`}>
-                <step.icon size={40} className={`mb-2 transition-colors duration-300 ${hoveredStep === idx ? 'text-white' : 'text-[#0A2540] opacity-70 group-hover:opacity-100'}`} />
-                <span className={`text-sm md:text-lg font-bold text-center px-2 transition-colors duration-300 ${hoveredStep === idx ? 'text-white' : 'text-[#0A2540]'}`}>{step.name}</span>
-              </div>
-              {/* Overlapping circles effect */}
+              {/* Top Line to next circle */}
               {idx < processSteps.length - 1 && (
-                <div className="absolute top-1/2 -right-16 w-32 h-32 rounded-full border-2 border-[#C1A68D]/20 -translate-y-1/2 -z-10 hidden md:block"></div>
+                <div className="absolute top-0 left-1/2 w-[9rem] md:w-[11rem] h-[1px] bg-[#111] z-0"></div>
               )}
+              
+              {/* Bottom Line to next circle */}
+              {idx >= 3 && idx < processSteps.length - 1 && (
+                <div className="absolute bottom-0 left-1/2 w-[9rem] md:w-[11rem] h-[1px] bg-[#E5E5E5] z-0"></div>
+              )}
+
+              {/* Top Dot */}
+              <div className="absolute top-[-3px] left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#111] z-20"></div>
+              
+              {/* Bottom Dot */}
+              {idx >= 3 && (
+                <div className="absolute bottom-[-3px] left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#E5E5E5] z-20"></div>
+              )}
+
+              {/* OBM Badge */}
+              {idx === 0 && (
+                <div className="absolute top-[-20px] left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#111] text-white flex items-center justify-center text-xs font-bold z-30">
+                  OBM
+                </div>
+              )}
+
+              {/* ODM Badge */}
+              {idx === 4 && (
+                <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#E5E5E5] text-[#111] flex items-center justify-center text-xs font-bold z-30">
+                  ODM
+                </div>
+              )}
+
+              {/* Circle */}
+              <div className={`w-48 h-48 md:w-60 md:h-60 rounded-full border border-[#111] flex items-center justify-center relative z-10 transition-colors duration-300 ${hoveredStep === idx ? 'bg-black/5' : 'bg-transparent'}`}>
+                {/* Inner Faint Circle for 4, 5, 6 */}
+                {idx >= 3 && (
+                  <div className="absolute w-[90%] h-[90%] rounded-full border border-[#E5E5E5] z-0"></div>
+                )}
+                <span className="text-base md:text-lg font-medium text-[#111] z-20 text-center px-4">
+                  {step.name}
+                </span>
+              </div>
             </div>
           ))}
         </motion.div>
@@ -472,6 +523,59 @@ function Process({ currentT }: { currentT: any }) {
   );
 }
 
+function ImageSlider({ images, alt, viewCaseText }: { images: string[], alt: string, viewCaseText: string }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+  React.useEffect(() => {
+    let interval: NodeJS.Timeout;
+    if (isHovered && images.length > 1) {
+      interval = setInterval(() => {
+        setCurrentIndex((prev) => (prev + 1) % images.length);
+      }, 1500); // Change image every 1.5 seconds
+    } else {
+      setCurrentIndex(0); // Reset to first image when not hovered
+    }
+    return () => clearInterval(interval);
+  }, [isHovered, images.length]);
+
+  return (
+    <div 
+      className="relative h-64 overflow-hidden mb-6 bg-gray-100 group"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <AnimatePresence initial={false}>
+        <motion.img
+          key={currentIndex}
+          src={images[currentIndex]}
+          alt={`${alt} ${currentIndex + 1}`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+      </AnimatePresence>
+      <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
+        <span className="text-white font-bold tracking-widest uppercase border border-white px-4 py-2 backdrop-blur-sm">{viewCaseText}</span>
+      </div>
+      
+      {/* Slider indicators */}
+      {images.length > 1 && (
+        <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          {images.map((_, idx) => (
+            <div 
+              key={idx} 
+              className={`h-1.5 rounded-full transition-all duration-300 ${idx === currentIndex ? 'w-4 bg-white' : 'w-1.5 bg-white/50'}`}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function SuccessCases({ currentT }: { currentT: any }) {
   return (
     <section className="py-32 px-6 md:px-12 max-w-7xl mx-auto bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiNlNWU3ZWIiLz48L3N2Zz4=')]">
@@ -483,16 +587,31 @@ function SuccessCases({ currentT }: { currentT: any }) {
         {currentT.cases.map((item: any, idx: number) => (
           <FadeIn key={item.name} delay={idx * 0.1} className="group">
             <div className="bg-white p-4 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 h-full flex flex-col">
-              <div className="relative h-64 overflow-hidden mb-6 bg-gray-100">
-                <img 
-                  src={item.image} 
-                  alt={item.name} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white font-bold tracking-widest uppercase border border-white px-4 py-2 backdrop-blur-sm">{currentT.viewCase}</span>
+              {item.prompt ? (
+                <div className="relative h-64 overflow-hidden mb-6 bg-gray-100">
+                  <GeneratedImage 
+                    prompt={item.prompt} 
+                    alt={item.name} 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white font-bold tracking-widest uppercase border border-white px-4 py-2 backdrop-blur-sm">{currentT.viewCase}</span>
+                  </div>
                 </div>
-              </div>
+              ) : item.images ? (
+                <ImageSlider images={item.images} alt={item.name} viewCaseText={currentT.viewCase} />
+              ) : (
+                <div className="relative h-64 overflow-hidden mb-6 bg-gray-100">
+                  <img 
+                    src={item.image} 
+                    alt={item.name} 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white font-bold tracking-widest uppercase border border-white px-4 py-2 backdrop-blur-sm">{currentT.viewCase}</span>
+                  </div>
+                </div>
+              )}
               <div className="flex-grow">
                 <div className="inline-block bg-gray-100 px-4 py-2 rounded-sm mb-4">
                   <h3 className="text-xl font-bold text-[#0A2540]">{item.name}</h3>
