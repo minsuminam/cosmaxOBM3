@@ -478,33 +478,25 @@ function Process({ currentT }: { currentT: any }) {
               )}
 
               {/* Circle */}
-              <div className={`w-48 h-48 md:w-60 md:h-60 rounded-full border border-[#111] flex items-center justify-center relative z-10 transition-colors duration-300 overflow-hidden ${hoveredStep === idx ? 'bg-black/5' : 'bg-transparent'}`}>
+              <motion.div 
+                animate={{ 
+                  scale: hoveredStep === idx ? 1.05 : 1,
+                  backgroundColor: hoveredStep === idx ? '#0A2540' : 'transparent',
+                  borderColor: hoveredStep === idx ? '#0A2540' : '#111',
+                  boxShadow: hoveredStep === idx ? '0 20px 25px -5px rgba(10, 37, 64, 0.2), 0 10px 10px -5px rgba(10, 37, 64, 0.1)' : 'none'
+                }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className={`w-48 h-48 md:w-60 md:h-60 rounded-full border flex items-center justify-center relative z-10 overflow-hidden`}
+              >
                 {/* Inner Faint Circle for 4, 5, 6 */}
                 {idx >= 3 && (
-                  <div className="absolute w-[90%] h-[90%] rounded-full border border-[#E5E5E5] z-0"></div>
+                  <div className={`absolute w-[90%] h-[90%] rounded-full border transition-colors duration-300 ${hoveredStep === idx ? 'border-white/20' : 'border-[#E5E5E5]'} z-0`}></div>
                 )}
                 
-                {/* Hover Images */}
-                <GeneratedImage 
-                  prompt={
-                    idx === 0 ? "A high-quality photograph of a team of business professionals discussing strategy in a modern meeting room, looking at charts and data." :
-                    idx === 1 ? "A creative mood board with various cosmetic brand concepts, color palettes, and material swatches on a clean desk." :
-                    idx === 2 ? "A person from behind, wearing a white shirt, sketching cosmetic compact designs (powder cases) on a large sheet of paper with a black pen. The desk is covered with sketches of cosmetic packaging. Bright, professional photography, shallow depth of field." :
-                    idx === 3 ? "A person in a white lab coat looking through a professional Olympus microscope in a laboratory setting. The person's hands in white gloves are adjusting the microscope stage. Clean, bright, professional laboratory photography, shallow depth of field." :
-                    idx === 4 ? "High-quality cosmetic packaging prototypes on a clean white table, showing elegant and modern designs." :
-                    "A modern, clean cosmetic manufacturing facility with automated production lines filling bottles."
-                  }
-                  alt={step.name}
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${hoveredStep === idx ? 'opacity-100' : 'opacity-0'}`}
-                />
-                
-                {/* Overlay to make text readable when image is shown */}
-                <div className={`absolute inset-0 bg-black/30 transition-opacity duration-500 ${hoveredStep === idx ? 'opacity-100' : 'opacity-0'}`}></div>
-
-                <span className={`text-base md:text-lg font-medium z-20 text-center px-4 relative transition-colors duration-300 ${hoveredStep === idx ? 'text-white drop-shadow-md' : 'text-[#111]'}`}>
+                <span className={`text-base md:text-lg font-medium z-20 text-center px-4 relative transition-colors duration-300 ${hoveredStep === idx ? 'text-white' : 'text-[#111]'}`}>
                   {step.name}
                 </span>
-              </div>
+              </motion.div>
             </div>
           ))}
         </motion.div>
